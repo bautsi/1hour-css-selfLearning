@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+      #box1 {
+        width: 250px;
+        height: 250px;
+        background: red;
+        font-size: 225px;
+        text-align: center;
+
+        /* animation: mySlide;
+        animation-play-state: running;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+        animation-timing-function: linear;
+        animation-duration: 5s; */
+      }
+      /* #box1:hover {
+        animation: 3s linear 0s infinite running mySlide;
+      } */
+      #box1:active {
+        animation: 3s linear 0s infinite running mySlide;
+      }
+
+      @keyframes mySlide {
+        from {
+          margin-left: 0%;
+        }
+        to {
+          margin-left: 100%;
+        }
+      }
+
+      /* @keyframes myRotate {
+        100% {
+          transform: rotateZ(360deg);
+        }
+      }
+
+      #box1:hover {
+        animation: 3s linear 0s infinite running myRotate;
+        animation-direction: alternate;
+      } */
+
+      /* @keyframes myOpacity {
+        10% {
+          opacity: 0;
+        }
+      }
+      #box1:hover {
+        animation: 3s linear 0s infinite running myOpacity;
+      } */
+
+      /* @keyframes myScale {
+        50% {
+          transform: scale(0.5, 0.5);
+        }
+      }
+      #box1:hover {
+        animation: 2s linear 0s infinite running myScale;
+      } */
+
+      @keyframes myColorChange {
+        16% {
+          background-color: orange;
+        }
+        32% {
+          background-color: yellow;
+        }
+        48% {
+          background-color: green;
+        }
+        64% {
+          background-color: blue;
+        }
+        80% {
+          background-color: purple;
+        }
+      }
+      #box1:hover {
+        animation: 3s linear 0s 1 running myColorChange;
+      }
+      /* 好像不能hover+active 除非把兩個keyframe的東西寫在一起 */
+    </style>
+  </head>
+  <body>
+    <div id="box1">Hi</div>
+  </body>
+</html>

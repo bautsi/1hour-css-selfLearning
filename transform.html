@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>transform</title>
+    <style>
+      #box1 {
+        border: 4px solid;
+        width: 250px;
+        height: 250px;
+        font-size: 225px;
+        background: lightskyblue;
+
+        /* transform: translateX(50px); */
+        /* transform: translateY(50px); */
+
+        transform: translate(50px, 50px);
+        transform: rotateX(60deg); /* 會將前一段忽略因為同為transform */
+        transform: rotateX(60deg) translate(50px, 50px);
+
+        /* transform: rotatey(180deg); */
+        /* transform: rotatez(180deg); */
+
+        /* transform: scaleX(3); */
+        /* transform: scaleY(3); */
+        transform: scale(2, 2);
+
+        /* transform: skewX(45deg); */ /* 左上右下 */
+        /* transform: skewY(45deg);  */
+        transform: skew(20deg, 20deg);
+
+        transform: matrix(
+          1.5,
+          0,
+          0.577,
+          /* 不能用deg因為甚麼tan() */ 1.5,
+          100,
+          100
+        ); /* scx, skx, sky, scy, tx, ty */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box1">Hi</div>
+  </body>
+</html>

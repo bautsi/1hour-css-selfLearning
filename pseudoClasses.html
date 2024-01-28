@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo classes</title>
+    <style>
+      a {
+        text-align: center;
+      }
+      a:link {
+        color: lawngreen;
+      }
+      a:visited {
+        color: gray;
+      }
+      a:hover {
+        color: tomato;
+      }
+      a:active {
+        color: violet;
+      }
+      div {
+        /* text-align: center; */
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+      }
+      button {
+        font-size: 30px;
+        /* display: inline-block; */
+      }
+      button:hover {
+        background-color: lightgray;
+      }
+      button:active {
+        background-color: gold;
+      }
+      .li:nth-child(even) {
+        background-color: skyblue;
+      }
+      .li:nth-child(odd) {
+        background-color: powderblue;
+      }
+      .li:nth-child(4n + 1) {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.google.com"><h1>Google.com</h1></a>
+    <div><button type="button">click me</button></div>
+    <ul>
+      <h1 class="li"><li>This is element#1</li></h1>
+      <h1 class="li"><li>This is element#2</li></h1>
+      <h1 class="li"><li>This is element#3</li></h1>
+      <h1 class="li"><li>This is element#4</li></h1>
+      <h1 class="li"><li>This is element#5</li></h1>
+      <h1 class="li"><li>This is element#6</li></h1>
+      <h1 class="li"><li>This is element#7</li></h1>
+      <h1 class="li"><li>This is element#8</li></h1>
+      <h1 class="li"><li>This is element#9</li></h1>
+      <h1 class="li"><li>This is element#10</li></h1>
+    </ul>
+  </body>
+</html>
